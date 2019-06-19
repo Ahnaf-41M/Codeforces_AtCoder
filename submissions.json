@@ -2384,6 +2384,23 @@
     ],
     "timestamp": "Jun/29/2021 10:15"
   },
+  "CF55738167": {
+    "contest_id": 59,
+    "language": "GNU C11",
+    "path": "codeforces\\59\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Word",
+    "problem_url": "https://codeforces.com/contest/59/problem/A",
+    "submission_id": "CF55738167",
+    "submission_url": "https://codeforces.com/contest/59/submission/55738167",
+    "tags": [
+      "implementation",
+      "strings",
+      "*800"
+    ],
+    "timestamp": "Jun/19/2019 11:52"
+  },
   "CF55738483": {
     "contest_id": 486,
     "language": "GNU C11",
