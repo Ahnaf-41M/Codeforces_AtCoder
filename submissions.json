@@ -2384,6 +2384,23 @@
     ],
     "timestamp": "Jun/29/2021 10:15"
   },
+  "CF57310171": {
+    "contest_id": 978,
+    "language": "GNU C11",
+    "path": "codeforces\\978\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "File Name",
+    "problem_url": "https://codeforces.com/contest/978/problem/B",
+    "submission_id": "CF57310171",
+    "submission_url": "https://codeforces.com/contest/978/submission/57310171",
+    "tags": [
+      "greedy",
+      "strings",
+      "*800"
+    ],
+    "timestamp": "Jul/19/2019 12:07"
+  },
   "CF57329411": {
     "contest_id": 122,
     "language": "GNU C11",
