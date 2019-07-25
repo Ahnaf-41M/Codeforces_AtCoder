@@ -4130,6 +4130,22 @@
     ],
     "timestamp": "Jul/23/2019 19:14"
   },
+  "CF57748207": {
+    "contest_id": 116,
+    "language": "GNU C11",
+    "path": "codeforces\\116\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Tram",
+    "problem_url": "https://codeforces.com/contest/116/problem/A",
+    "submission_id": "CF57748207",
+    "submission_url": "https://codeforces.com/contest/116/submission/57748207",
+    "tags": [
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Jul/25/2019 19:49"
+  },
   "CF57751177": {
     "contest_id": 344,
     "language": "GNU C11",
