@@ -4229,6 +4229,22 @@
     ],
     "timestamp": "Jul/28/2019 21:52"
   },
+  "CF58367699": {
+    "contest_id": 379,
+    "language": "GNU C++11",
+    "path": "codeforces\\379\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "New Year Candles",
+    "problem_url": "https://codeforces.com/contest/379/problem/A",
+    "submission_id": "CF58367699",
+    "submission_url": "https://codeforces.com/contest/379/submission/58367699",
+    "tags": [
+      "implementation",
+      "*1000"
+    ],
+    "timestamp": "Aug/06/2019 11:06"
+  },
   "CF58441123": {
     "contest_id": 581,
     "language": "GNU C++11",
