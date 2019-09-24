@@ -4229,6 +4229,23 @@
     ],
     "timestamp": "Jul/28/2019 21:52"
   },
+  "CF61220213": {
+    "contest_id": 1230,
+    "language": "GNU C++17",
+    "path": "codeforces\\1230\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Dawid and Bags of Candies",
+    "problem_url": "https://codeforces.com/contest/1230/problem/A",
+    "submission_id": "CF61220213",
+    "submission_url": "https://codeforces.com/contest/1230/submission/61220213",
+    "tags": [
+      "brute force",
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Sep/24/2019 19:45"
+  },
   "CF61228696": {
     "contest_id": 131,
     "language": "GNU C++17",
