@@ -4348,6 +4348,24 @@
     ],
     "timestamp": "Oct/31/2019 11:07"
   },
+  "CF66974455": {
+    "contest_id": 1271,
+    "language": "GNU C++17",
+    "path": "codeforces\\1271\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Suits",
+    "problem_url": "https://codeforces.com/contest/1271/problem/A",
+    "submission_id": "CF66974455",
+    "submission_url": "https://codeforces.com/contest/1271/submission/66974455",
+    "tags": [
+      "brute force",
+      "greedy",
+      "math",
+      "*800"
+    ],
+    "timestamp": "Dec/15/2019 20:11"
+  },
   "CF66976768": {
     "contest_id": 443,
     "language": "GNU C++17",
