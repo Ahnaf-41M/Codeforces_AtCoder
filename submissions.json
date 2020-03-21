@@ -4348,6 +4348,24 @@
     ],
     "timestamp": "Oct/31/2019 11:07"
   },
+  "CF73854094": {
+    "contest_id": 224,
+    "language": "GNU C++17",
+    "path": "codeforces\\224\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Parallelepiped",
+    "problem_url": "https://codeforces.com/contest/224/problem/A",
+    "submission_id": "CF73854094",
+    "submission_url": "https://codeforces.com/contest/224/submission/73854094",
+    "tags": [
+      "brute force",
+      "geometry",
+      "math",
+      "*1100"
+    ],
+    "timestamp": "Mar/21/2020 11:43"
+  },
   "CF73854977": {
     "contest_id": 34,
     "language": "GNU C++17",
