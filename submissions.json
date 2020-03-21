@@ -4348,6 +4348,23 @@
     ],
     "timestamp": "Oct/31/2019 11:07"
   },
+  "CF73880725": {
+    "contest_id": 205,
+    "language": "GNU C++17",
+    "path": "codeforces\\205\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Little Elephant and Rozdil",
+    "problem_url": "https://codeforces.com/contest/205/problem/A",
+    "submission_id": "CF73880725",
+    "submission_url": "https://codeforces.com/contest/205/submission/73880725",
+    "tags": [
+      "brute force",
+      "implementation",
+      "*900"
+    ],
+    "timestamp": "Mar/21/2020 17:19"
+  },
   "CF73882387": {
     "contest_id": 352,
     "language": "GNU C++17",
