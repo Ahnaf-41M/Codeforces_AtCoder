@@ -4348,6 +4348,23 @@
     ],
     "timestamp": "Oct/31/2019 11:07"
   },
+  "CF74007039": {
+    "contest_id": 118,
+    "language": "GNU C++17",
+    "path": "codeforces\\118\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Present from Lena",
+    "problem_url": "https://codeforces.com/contest/118/problem/B",
+    "submission_id": "CF74007039",
+    "submission_url": "https://codeforces.com/contest/118/submission/74007039",
+    "tags": [
+      "constructive algorithms",
+      "implementation",
+      "*1000"
+    ],
+    "timestamp": "Mar/23/2020 10:29"
+  },
   "CF80039140": {
     "contest_id": 10,
     "language": "GNU C++17",
