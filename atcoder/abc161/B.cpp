@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
- 
+
 #define min3(a,b,c) min(a,min(b,c))
 #define max3(a,b,c) max(a,max(b,c))
 #define min4(a,b,c,d) min(min(a,b),min(c,d))
@@ -19,7 +19,7 @@ int main()
      IOS
      int n,m,i,cnt=0,res=0;
      double ans,mmd;
- 
+
      cin>>n>>m;
      int a[n];
      mmd = (1.0)/(4.0*m);
@@ -31,7 +31,7 @@ int main()
      for(i = 0; i < n; i++)
      {
           ans = (a[i]*1.0)/(res*1.0);
- 
+
           if(ans<mmd)
                cnt=cnt;
           else
@@ -41,7 +41,8 @@ int main()
           cout<<"Yes\n";
      else
           cout<<"No\n";
- 
- 
+
+
      return 0;
 }
+
