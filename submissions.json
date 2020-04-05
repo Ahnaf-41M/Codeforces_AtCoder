@@ -1,4 +1,20 @@
 {
+  "AC11564292": {
+    "contest_id": "abc161",
+    "language": "C++14 (GCC 5.4.1)",
+    "path": "atcoder\\abc161\\A.cpp",
+    "platform": "AtCoder",
+    "problem_index": "A",
+    "problem_name": "ABC Swap",
+    "problem_url": "https://atcoder.jp/contests/abc161/tasks/abc161_a",
+    "submission_id": "AC11564292",
+    "submission_url": "https://atcoder.jp/contests/abc161/submissions/11564292",
+    "tags": [
+      "AtCoder",
+      "*100"
+    ],
+    "timestamp": "Apr/05/2020 08:45"
+  },
   "AC11564308": {
     "contest_id": "abc161",
     "language": "C++14 (GCC 5.4.1)",
