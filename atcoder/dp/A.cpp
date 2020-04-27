@@ -1,43 +1,23 @@
-#include "bits/stdc++.h"
-#define  MX         100005
-#define  ff         first
-#define  ss         second
-#define  pb         push_back
-#define  int        long long
-#define  PII        pair<int,int>
-#define  all(v)     v.begin(),v.end()
-#define  rep(i,a,b) for(int i=a;i<=b;i++)
+#include<bits/stdc++.h>
 using namespace std;
 
-int n, h[MX], dp[MX][3];
-
-int func(int pos, int state)
+int main()
 {
-   // if(pos>n) return 0;
-   if (dp[pos][state] != -1) return dp[pos][state];
+     int n,i,j;
+     cin>>n;
+     int cost[n+1];
+     int dp[n+1] = {INT_MAX};
+     //cout<<dp[0];
+     for(i = 1; i <= n ; i++)
+          cin>>cost[i];
 
-   int res = 0;
-   if (pos + 1 <= n)
-      res = abs(h[pos] - h[pos + 1]) + func(pos + 1, 1);
-   if (pos + 2 <= n)
-      res = min(res, abs(h[pos] - h[pos + 2]) + func(pos + 2, 2));
+     dp[1]=0; //cost of moving from 1st to 1st position is 0
+     dp[2]=abs(cost[2]-cost[1]); //cost moving from position 1 to 2 is abs(c[2]-c[1])
 
-   return dp[pos][state] = res;
-}
-signed main()
-{
-   ios::sync_with_stdio(0);
-   cin.tie(0);
-   cout.tie(0);
-   
-   // freopen("input.txt","r",stdin);
-   // freopen("output.txt","w",stdout);
-   memset(dp, -1, sizeof(dp));
-   cin >> n;
-
-   rep(i, 1, n) cin >> h[i];
-
-   cout << func(1, 1);
-
-   return 0;
+     for(i = 3; i <= n; i++)
+     {
+         dp[i] = min(dp[i-1]+abs(cost[i]-cost[i-1]),dp[i-2]+abs(cost[i]-cost[i-2]));
+         //finding the minimum cost between position i to (i-1) and (i-2)
+     }
+     cout<<dp[n]<<endl;
 }
