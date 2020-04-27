@@ -1,43 +1,29 @@
-#include "bits/stdc++.h"
-#define  MX         100005
-#define  ff         first
-#define  ss         second
-#define  pb         push_back
-#define  int        long long
-#define  PII        pair<int,int>
-#define  all(v)     v.begin(),v.end()
-#define  rep(i,a,b) for(int i=a;i<=b;i++)
+#include<bits/stdc++.h>
 using namespace std;
 
-int n, h[MX], dp[MX], k;
-
-int func(int pos)
+int main()
 {
-   if (dp[pos] != -1) return dp[pos];
+    int n,i,j,k;
+    cin>>n>>k;
+    int cost[n+1];
+    int dp[n+1];;
+    //cout<<dp[0];
+    for(i = 0; i < n ; i++)
+        cin>>cost[i];
 
-   int res = 1e9;
-   for (int i = 1; i <= k; i++) {
-      int j = i + pos;
-      if (j > n) break;
-      res = min(res, abs(h[j] - h[pos]) + func(j));
-   }
-   res = (res == 1e9 ? 0 : res);
-   return dp[pos] = res;
-}
-signed main()
-{
-   ios::sync_with_stdio(0);
-   cin.tie(0);
-   cout.tie(0);
+    dp[0]=0;
+    for(i = 1; i <= n; i++)dp[i]=INT_MAX;
 
-   // freopen("input.txt","r",stdin);
-   // freopen("output.txt","w",stdout);
-   memset(dp, -1, sizeof(dp));
-   cin >> n >> k;
+    for(i = 1; i < n; i++)
+    {
+        for(j = 1; j <= k; j++)
+        {
+            if(i-j < 0)
+                break;
+            dp[i] = min(dp[i],abs(cost[i]-cost[i-j])+dp[i-j]);
+            //finding the minimum cost between positions i to (i-1) to (i-k)
+        }
 
-   rep(i, 1, n) cin >> h[i];
-
-   cout << func(1) << "\n";
-
-   return 0;
+    }
+    cout<<dp[n-1]<<endl;
 }
