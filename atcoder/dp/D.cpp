@@ -1,40 +1,42 @@
-#include "bits/stdc++.h"
-#define  MX         100005
-#define  ff         first
-#define  ss         second
-#define  pb         push_back
-#define  int        long long
-#define  PII        pair<int,int>
-#define  all(v)     v.begin(),v.end()
-#define  rep(i,a,b) for(int i=a;i<=b;i++)
+#include<bits/stdc++.h>
 using namespace std;
-
-int n, W, dp[101][MX], wt[MX], val[MX];
-
-int func(int pos, int curWt)
+#define ll long long
+int main()
 {
-   if (pos > n) return 0;
-   if (dp[pos][curWt] != -1) return dp[pos][curWt];
+     ll i,j,n,cap;
+     cin>>n>>cap;
+     int wt[n+1],cost[n+1];
 
-   int r1 = 0, r2 = 0;
-   if (curWt + wt[pos] <= W)
-      r1 = val[pos] + func(pos + 1, curWt + wt[pos]);
-   r2 = func(pos + 1, curWt);
-   return dp[pos][curWt] = max(r1, r2);
+     for(i = 0; i < n; i++)
+     {
+          cin>>wt[i]>>cost[i];
+     }
+
+     ll dp[n+1][cap+1] = {};
+
+     for(i = 1; i <= n; i++)
+     {
+          for(j = 1; j <= cap; j++)
+          {
+               if(wt[i-1] <= j)
+               {
+                    dp[i][j] = max(cost[i-1]+dp[i-1][j-wt[i-1]],dp[i-1][j]);
+               }
+               else
+                    dp[i][j] = dp[i-1][j];
+          }
+     }
+     cout<<dp[n][cap]<<endl;
+     /*for(i = 0; i <= n; i++)
+     {
+          for(j = 0; j <= cap; j++)
+          {
+               cout<<dp[i][j]<<" ";
+          }
+          cout<<endl;
+
+     }*/
+
+
 }
-signed main()
-{
-   ios::sync_with_stdio(0);
-   cin.tie(0);
-   cout.tie(0);
 
-   memset(dp, -1, sizeof(dp));
-
-   cin >> n >> W;
-
-   rep(i, 1, n) {
-      cin >> wt[i] >> val[i];
-   }
-   cout << func(1, 0);
-   return 0;
-}
