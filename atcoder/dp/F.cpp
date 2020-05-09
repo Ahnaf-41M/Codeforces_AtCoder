@@ -1,59 +1,62 @@
-#include "bits/stdc++.h"
-#define  MX         100005
-#define  ff         first
-#define  ss         second
-#define  pb         push_back
-#define  int        long long
-#define  PII        pair<int,int>
-#define  all(v)     v.begin(),v.end()
-#define  rep(i,a,b) for(int i=a;i<=b;i++)
+#include<bits/stdc++.h>
 using namespace std;
 
-string s, t;
-int n1, n2;
-int dp[3005][3005];
-
-int func(int x, int y)
+void LCS(string s1,string s2,int n,int m)
 {
-   if (x >= n1 || y >= n2) return 0;
-   if (dp[x][y] != -1) return dp[x][y];
+    int dp[n+1][m+1];
+    int i,j;
 
-   if (s[x] == t[y]) 
-      return dp[x][y] = 1 + func(x + 1, y + 1);
-   else {
-      int r1 = func(x + 1, y);
-      int r2 = func(x, y + 1);
-      return dp[x][y] = max(r1, r2);
-   }
+    memset(dp,-1,sizeof(dp));
+
+    for(i = 0; i <= n; i++) //Initializing the first column
+        dp[i][0]=0;
+    for(i = 0; i <= m; i++) //Initializing the first row
+        dp[0][i]=0;
+
+    for(i = 1; i <= n; i++)
+    {
+        for(j = 1; j <= m; j++)
+        {
+            if(s1[i-1] == s2[j-1])
+                dp[i][j] = 1 + dp[i-1][j-1];
+            else
+                dp[i][j] = max(dp[i-1][j],dp[i][j-1]);
+        }
+    }
+    string s="";
+
+    i = n,j=m;
+    while(i>0 && j>0)
+    {
+        if(s1[i-1] == s2[j-1])
+        {
+            s+=s1[i-1];
+            i--,j--;
+        }
+        else
+        {
+            if(dp[i-1][j] > dp[i][j-1])
+                i--;
+            else
+                j--;
+        }
+
+    }
+    reverse(s.begin(),s.end());
+
+    cout<<s<<endl;
+    //return dp[n][m];
 }
-void Print_LCS()
+int main()
 {
-   int i = 0, j = 0;
-   string lcs = "";
-   while (i < n1 && j < n2) {
-      if (s[i] == t[j]) {
-         lcs += s[i];
-         i++, j++;
-      }
-      else {
-         if (dp[i + 1][j] > dp[i][j + 1]) i++;
-         else j++;
-      }
-   }
-   cout << lcs;
-}
-signed main()
-{
-   ios::sync_with_stdio(0);
-   cin.tie(0);
-   cout.tie(0);
+    int n,m;
+    string s1,s2;
 
-   memset(dp, -1, sizeof(dp));
+    getline(cin,s1);
+    getline(cin,s2);
+    n = s1.size();
+    m = s2.size();
 
-   cin >> s >> t;
-   n1 = s.size(), n2 = t.size();
+    LCS(s1,s2,n,m);
 
-   func(0, 0);
-   Print_LCS();
-   return 0;
 }
