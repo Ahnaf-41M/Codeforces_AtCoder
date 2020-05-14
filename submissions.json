@@ -4348,6 +4348,22 @@
     ],
     "timestamp": "Oct/31/2019 11:07"
   },
+  "CF80039140": {
+    "contest_id": 10,
+    "language": "GNU C++17",
+    "path": "codeforces\\10\\D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "LCIS",
+    "problem_url": "https://codeforces.com/contest/10/problem/D",
+    "submission_id": "CF80039140",
+    "submission_url": "https://codeforces.com/contest/10/submission/80039140",
+    "tags": [
+      "dp",
+      "*2800"
+    ],
+    "timestamp": "May/14/2020 12:39"
+  },
   "CF80104087": {
     "contest_id": 1353,
     "language": "GNU C++17",
