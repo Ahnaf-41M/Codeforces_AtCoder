@@ -1,53 +1,68 @@
 #include <bits/stdc++.h>
 #include <ext/rope>
-#include <ext/pb_ds/tree_policy.hpp>
-#include <ext/pb_ds/assoc_container.hpp>
 
-#define  ff      first
-#define  ss      second
-#define  pb      push_back
-#define  ll      long long
-#define  MX      100005
-#define  inf     INT_MAX
-#define  mod     1000000007
-#define  endl    "\n"
+#define min3(a, b, c) min(a, min(b, c))
+#define max3(a, b, c) max(a, max(b, c))
+#define min4(a, b, c, d) min(min(a, b), min(c, d))
+#define max4(a, b, c, d) max(max(a, b), max(c, d))
 
-#define  W(t)            while(t--)
-#define  gcd(a,b)        __gcd(a,b)
-#define  lcm(a,b)        (a*b)/gcd(a,b)
-#define  all(v)          v.begin(),v.end()
-#define  clr(a,x)        memset(a,x,sizeof(a))
-#define  rep(i,a,b)      for(i = a; i < b; i++)
-#define  irep(i,a,b)     for(i = a; i >= b; i--)
-#define  IOS             ios_base::sync_with_stdio(0),cin.tie(0),cout.tie(0);
+#define count_one(a) __builtin_popcount(a) // Returns the number of set bits(1) in a number(a). In long long use __builtin_popcountll(a)
+#define parity(i) __builtin_parity(i)      //even parity 0 and odd parity 1
+#define blz(a) __builtin_clz(a)            //Returns the number of leading zeroes in a number(a)
+#define btz(a) __builtin_ctz(a)            //Returns the number of trailing zeroes in a number(a)
+#define gcd(a, b) __gcd(a, b)
+#define lcm(a, b) (a * (b / gcd(a, b)))
+
+#define pb push_back
+#define PI M_PI
+#define endl "\n"
+#define sc scanf
+#define pf printf
+
+#define ll long long
+#define ull unsigned long long
+
+#define W(t) while (t--)
+#define rep1(i, n) for (int i = 0; i < n; i++)
+#define rep2(a, b) for (int i = a; i <= b; i++)
+#define rep3(a, b, c) for (int i = a; i <= b; i += c)
+#define irep(a, b, c) for (int i = b; i >= a; i -= c)
+#define repit(it, type) for (it = type.begin(); it != type.end(); it++)
+#define IOS ios::sync_with_stdio(0), cin.tie(0), cout.tie(0);
 using namespace std;
 using namespace __gnu_cxx;
-using namespace __gnu_pbds;
-template <typename T>  using ordered_set =
-  tree<T, null_type, less<T>,
-  rb_tree_tag, tree_order_statistics_node_update>;
 
 int main()
 {
-  // #ifndef ONLINE_JUDGE
-  //    freopen("input.txt", "r", stdin);
-  //    freopen("output.txt", "w", stdout);
-  // #endif
+    IOS
+        //freopen("input.txt", "r", stdin);
+        //freopen("output.txt", "w", stdout);
+    int n,t, i, j;
 
-  IOS
-  int n, i; cin >> n;
-  int a[n + 1], b[n + 1], pos[n + 1], freq[n + 1] = {};
+    cin >> n;
+    int a[n], b[n], tmp, max_match = -1;
+    map<int, int> dif_mp, pos;
+    map<int, int>::iterator it;
+    rep1(i, n)
+    {
+        cin >> a[i];
+        pos[a[i]] = i+1;
+    }
+    rep1(i, n)
+    {
+        cin >> b[i];
+    }
+    rep1(i, n)
+    {
+        tmp = pos[b[i]] - (i+1);
+        if (tmp < 0)
+            tmp += n;
 
-  rep(i, 1, n + 1) {
-    cin >> a[i];
-    pos[a[i]] = i;
-  }
-  rep(i, 1, n + 1) {
-    cin >> b[i];
-    freq[abs((pos[b[i]] - i + n) % n)]++;
-  }
-  int ans = 0;
-  rep(i, 0, n + 1) ans = max(ans, freq[i]);
-  cout << ans;
-
+        dif_mp[tmp]++;
+    }
+    repit(it, dif_mp)
+    {
+        max_match = max(max_match, it->second);
+    }
+    cout << max_match << endl;
 }
