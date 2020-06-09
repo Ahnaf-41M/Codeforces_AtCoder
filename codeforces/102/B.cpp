@@ -1,65 +1,72 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 #include <ext/rope>
 
-#define  pb            push_back
-#define  int           long long
-#define  endl          "\n"
-#define  MX            100005
+#define min3(a,b,c)   min(a,min(b,c))
+#define max3(a,b,c)   max(a,max(b,c))
+#define min4(a,b,c,d) min(min(a,b),min(c,d))
+#define max4(a,b,c,d) max(max(a,b),max(c,d))
 
-#define  all(v)        v.begin(),v.end()
-#define  gcd(a,b)      __gcd(a,b)
-#define  lcm(a,b)      (a*b)/gcd(a,b)
-#define  rep(i,a,b)    for(int i = a; i <= b; i++)
-#define  irep(i,b,a)   for(int i = b; i >= a; i--)
+#define count_one(a) __builtin_popcount(a)  // Returns the number of set bits(1) in a number(a). In long long use __builtin_popcountll(a)
+#define parity(i)    __builtin_parity(i)  //even parity 0 and odd parity 1
+#define blz(a)       __builtin_clz(a) //Returns the number of leading zeroes in a number(a)
+#define btz(a)       __builtin_ctz(a) //Returns the number of trailing zeroes in a number(a)
+#define gcd(a,b)     __gcd(a,b)
+#define lcm(a,b)     (a*(b/gcd(a,b)))
 
+#define pb   push_back
+#define PI   M_PI
+#define endl "\n"
+#define sc   scanf
+#define pf   printf
+
+#define ll  long long
+#define ull unsigned long long
+
+#define W(t)            while(t--)
+#define rep1(i,n)       for(int i = 0; i < n; i++)
+#define rep2(a,b)       for(int i = a; i <= b; i++)
+#define rep3(a,b,c)     for(int i = a; i <= b; i+=c)
+#define irep(a,b,c)     for(int i = b; i >=a; i-=c)
+#define repit(it,type)  for(it = type.begin(); it != type.end(); it++)
+#define IOS ios::sync_with_stdio(0), cin.tie(0), cout.tie(0);
 using namespace std;
 using namespace __gnu_cxx;
 
-int NOD(int x)
+int main()
 {
-   int c = 0;
-   while (x)
-      x /= 10, c++;
-   return c;
+    IOS
+    //freopen("input.txt", "r", stdin);
+    //freopen("output.txt", "w", stdout);
+
+    string num;
+     ll i,n=0,cnt=0;
+
+    cin>>num;
+    if(num.size()==1)
+    {
+        cout<<0<<endl;
+    }
+    else
+    {
+         rep1(i,num.size())
+         {
+              n += num[i] - 48;
+         }
+         cnt++;
+         while(n/10 !=0)
+         {
+              ll p = n,rem=0;
+              while(p)
+              {
+                   rem+=(p%10);
+                   p/=10;
+              }
+              cnt++;
+              n = rem;
+         }
+         cout<<cnt<<endl;
+    }
+
+    return 0;
 }
-int SOD(int x)
-{
-   int c = 0;
-   while (x)
-      c += x % 10, x /= 10;
-   return c;
-}
-void Solve()
-{
-   string s;
-   int n = 0, cnt = 0;
-   cin >> s;
 
-   for (char ch : s)
-      n += (ch - '0');
-
-   if (s.size() == 1) {
-      cout << 0;
-      return;
-   }
-   cnt++;
-   while (NOD(n) > 1)
-      cnt++, n = SOD(n);
-
-   cout << cnt;
-   return;
-}
-signed main()
-{
-   ios_base::sync_with_stdio(0);
-   cin.tie(0);
-   cout.tie(0);
-
-   //int T;
-   //cin >> T;
-
-   //while (T--)
-   Solve();
-
-   return 0;
-}
