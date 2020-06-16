@@ -7883,6 +7883,22 @@
     ],
     "timestamp": "Jun/08/2020 08:21"
   },
+  "CF83898963": {
+    "contest_id": 1213,
+    "language": "GNU C++17",
+    "path": "codeforces\\1213\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Book Reading",
+    "problem_url": "https://codeforces.com/contest/1213/problem/C",
+    "submission_id": "CF83898963",
+    "submission_url": "https://codeforces.com/contest/1213/submission/83898963",
+    "tags": [
+      "math",
+      "*1200"
+    ],
+    "timestamp": "Jun/16/2020 13:12"
+  },
   "CF83909253": {
     "contest_id": 1311,
     "language": "GNU C++17",
