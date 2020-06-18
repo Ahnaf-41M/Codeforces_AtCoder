@@ -7883,6 +7883,22 @@
     ],
     "timestamp": "Jun/08/2020 08:21"
   },
+  "CF84132138": {
+    "contest_id": 1154,
+    "language": "GNU C++17",
+    "path": "codeforces\\1154\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Make Them Equal",
+    "problem_url": "https://codeforces.com/contest/1154/problem/B",
+    "submission_id": "CF84132138",
+    "submission_url": "https://codeforces.com/contest/1154/submission/84132138",
+    "tags": [
+      "math",
+      "*1200"
+    ],
+    "timestamp": "Jun/18/2020 12:49"
+  },
   "CF84149341": {
     "contest_id": 1326,
     "language": "GNU C++17",
