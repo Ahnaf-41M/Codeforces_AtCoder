@@ -2384,6 +2384,25 @@
     ],
     "timestamp": "Jun/29/2021 10:15"
   },
+  "CF97746667": {
+    "contest_id": 1419,
+    "language": "GNU C++14",
+    "path": "codeforces\\1419\\D1.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D1",
+    "problem_name": "Sage's Birthday (easy version)",
+    "problem_url": "https://codeforces.com/contest/1419/problem/D1",
+    "submission_id": "CF97746667",
+    "submission_url": "https://codeforces.com/contest/1419/submission/97746667",
+    "tags": [
+      "binary search",
+      "constructive algorithms",
+      "greedy",
+      "sortings",
+      "*1000"
+    ],
+    "timestamp": "Nov/06/2020 08:52"
+  },
   "CF97746715": {
     "contest_id": 1365,
     "language": "GNU C++14",
