@@ -2384,6 +2384,21 @@
     ],
     "timestamp": "Jun/29/2021 10:15"
   },
+  "CF99758501": {
+    "contest_id": 1032,
+    "language": "GNU C++14",
+    "path": "codeforces\\1032\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Personalized Cup",
+    "problem_url": "https://codeforces.com/contest/1032/problem/B",
+    "submission_id": "CF99758501",
+    "submission_url": "https://codeforces.com/contest/1032/submission/99758501",
+    "tags": [
+      "*1200"
+    ],
+    "timestamp": "Nov/28/2020 10:10"
+  },
   "CF99767402": {
     "contest_id": 1028,
     "language": "GNU C++14",
