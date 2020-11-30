@@ -1,4 +1,20 @@
 {
+  "AC18499238": {
+    "contest_id": "abc139",
+    "language": "C++ (GCC 9.2.1)",
+    "path": "atcoder\\abc139\\D.cpp",
+    "platform": "AtCoder",
+    "problem_index": "D",
+    "problem_name": "ModSum",
+    "problem_url": "https://atcoder.jp/contests/abc139/tasks/abc139_d",
+    "submission_id": "AC18499238",
+    "submission_url": "https://atcoder.jp/contests/abc139/submissions/18499238",
+    "tags": [
+      "AtCoder",
+      "*400"
+    ],
+    "timestamp": "Nov/30/2020 13:09"
+  },
   "AC18502066": {
     "contest_id": "abc075",
     "language": "C++ (GCC 9.2.1)",
