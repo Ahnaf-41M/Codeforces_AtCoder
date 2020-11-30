@@ -1,4 +1,20 @@
 {
+  "AC18503034": {
+    "contest_id": "abc060",
+    "language": "C++ (GCC 9.2.1)",
+    "path": "atcoder\\abc060\\B.cpp",
+    "platform": "AtCoder",
+    "problem_index": "B",
+    "problem_name": "Choose Integers",
+    "problem_url": "https://atcoder.jp/contests/abc060/tasks/abc060_b",
+    "submission_id": "AC18503034",
+    "submission_url": "https://atcoder.jp/contests/abc060/submissions/18503034",
+    "tags": [
+      "AtCoder",
+      "*200"
+    ],
+    "timestamp": "Nov/30/2020 18:04"
+  },
   "AC18503298": {
     "contest_id": "abc072",
     "language": "C++ (GCC 9.2.1)",
