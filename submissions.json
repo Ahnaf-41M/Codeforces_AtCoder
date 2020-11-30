@@ -1,4 +1,20 @@
 {
+  "AC18502586": {
+    "contest_id": "abc098",
+    "language": "C++ (GCC 9.2.1)",
+    "path": "atcoder\\abc098\\B.cpp",
+    "platform": "AtCoder",
+    "problem_index": "B",
+    "problem_name": "Cut and Count",
+    "problem_url": "https://atcoder.jp/contests/abc098/tasks/abc098_b",
+    "submission_id": "AC18502586",
+    "submission_url": "https://atcoder.jp/contests/abc098/submissions/18502586",
+    "tags": [
+      "AtCoder",
+      "*200"
+    ],
+    "timestamp": "Nov/30/2020 17:35"
+  },
   "AC18502871": {
     "contest_id": "abc064",
     "language": "C++ (GCC 9.2.1)",
