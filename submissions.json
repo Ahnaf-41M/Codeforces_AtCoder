@@ -1,4 +1,21 @@
 {
+  "CF100088050": {
+    "contest_id": 1027,
+    "language": "GNU C++14",
+    "path": "codeforces\\1027\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Numbers on the Chessboard",
+    "problem_url": "https://codeforces.com/contest/1027/problem/B",
+    "submission_id": "CF100088050",
+    "submission_url": "https://codeforces.com/contest/1027/submission/100088050",
+    "tags": [
+      "implementation",
+      "math",
+      "*1200"
+    ],
+    "timestamp": "Dec/01/2020 12:58"
+  },
   "CF100115037": {
     "contest_id": 1037,
     "language": "GNU C++14",
