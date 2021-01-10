@@ -51,6 +51,23 @@
     ],
     "timestamp": "Dec/01/2020 20:03"
   },
+  "CF103927388": {
+    "contest_id": 1238,
+    "language": "GNU C++14",
+    "path": "codeforces\\1238\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Kill `Em All",
+    "problem_url": "https://codeforces.com/contest/1238/problem/B",
+    "submission_id": "CF103927388",
+    "submission_url": "https://codeforces.com/contest/1238/submission/103927388",
+    "tags": [
+      "greedy",
+      "sortings",
+      "*1300"
+    ],
+    "timestamp": "Jan/10/2021 09:54"
+  },
   "CF103931934": {
     "contest_id": 1236,
     "language": "GNU C++14",
