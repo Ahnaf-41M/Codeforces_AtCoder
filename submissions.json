@@ -51,6 +51,23 @@
     ],
     "timestamp": "Dec/01/2020 20:03"
   },
+  "CF104373675": {
+    "contest_id": 1101,
+    "language": "GNU C++14",
+    "path": "codeforces\\1101\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Accordion",
+    "problem_url": "https://codeforces.com/contest/1101/problem/B",
+    "submission_id": "CF104373675",
+    "submission_url": "https://codeforces.com/contest/1101/submission/104373675",
+    "tags": [
+      "greedy",
+      "implementation",
+      "*1300"
+    ],
+    "timestamp": "Jan/15/2021 08:43"
+  },
   "CF104374803": {
     "contest_id": 1100,
     "language": "GNU C++14",
