@@ -15,29 +15,64 @@
 using namespace std;
 using namespace __gnu_cxx;
 
-void Solve()
-{
-   int N;
-   string s;
-   cin >> N >> s;
+int N;
+string s, s2 = "";
 
-   rep(sum, 0, 9 * N) {
-      int cur = 0, ok = 0;
-      for (char ch : s) {
-         cur += (ch - '0');
-         // cout << cur << " " << sum << endl;
-         if (cur == sum) {
-            cur = 0;
-            ok++;
+bool Check()
+{
+   int sum = 0;
+   rep(i, 0, s.size() - 2) {
+      int cur = 0, ok = 1, vis = 0;
+      sum += (s[i] - '0');
+      if (i + 1 < s.size()) {
+         rep(j, i + 1, s.size() - 1) {
+            cur += (s[j] - '0');
+            if (cur == sum) {
+               cur = 0;
+               vis = 1;
+            }
+            if (cur > sum) {
+               ok = false;
+               break;
+            }
          }
       }
-      if (ok > 1 && !cur) {
-         cout << "YES\n";
-         return;
-      }
-      // cout << endl;
+      if (ok && !cur && vis)
+         return true;
    }
-   cout << "NO\n";
+   return false;
+}
+void Remake()
+{
+   int i = 0, j = N - 1;
+   while (s[i] == '0' && i < N)
+      i++;
+   while (s[j] == '0' && j >= 0)
+      j--;
+
+   rep(k, i, j) s2 += s[k];
+}
+void Solve()
+{
+
+   cin >> N >> s;
+   Remake();
+   s = s2;
+
+   // cout << s << endl;
+   if (s.size() == 1) {
+      cout << "NO\n";
+      return;
+   }
+   if (s.empty() || Check()) {
+      cout << "YES\n";
+      return;
+   }
+   reverse(all(s));
+   if (Check())
+      cout << "YES\n";
+   else
+      cout << "NO\n";
    return;
 }
 signed main()
