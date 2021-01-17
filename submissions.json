@@ -51,6 +51,22 @@
     ],
     "timestamp": "Dec/01/2020 20:03"
   },
+  "CF104573057": {
+    "contest_id": 1037,
+    "language": "GNU C++14",
+    "path": "codeforces\\1037\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Reach Median",
+    "problem_url": "https://codeforces.com/contest/1037/problem/B",
+    "submission_id": "CF104573057",
+    "submission_url": "https://codeforces.com/contest/1037/submission/104573057",
+    "tags": [
+      "greedy",
+      "*1300"
+    ],
+    "timestamp": "Jan/17/2021 15:46"
+  },
   "CF104581977": {
     "contest_id": 1037,
     "language": "GNU C++14",
