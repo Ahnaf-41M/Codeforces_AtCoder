@@ -1,4 +1,20 @@
 {
+  "CF105071421": {
+    "contest_id": 915,
+    "language": "GNU C++14",
+    "path": "codeforces\\915\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Browser",
+    "problem_url": "https://codeforces.com/contest/915/problem/B",
+    "submission_id": "CF105071421",
+    "submission_url": "https://codeforces.com/contest/915/submission/105071421",
+    "tags": [
+      "implementation",
+      "*1300"
+    ],
+    "timestamp": "Jan/22/2021 20:22"
+  },
   "CF105075040": {
     "contest_id": 912,
     "language": "GNU C++14",
