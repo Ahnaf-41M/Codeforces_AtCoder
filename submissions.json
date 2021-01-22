@@ -51,6 +51,23 @@
     ],
     "timestamp": "Dec/01/2020 20:03"
   },
+  "CF105063495": {
+    "contest_id": 919,
+    "language": "GNU C++14",
+    "path": "codeforces\\919\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Seat Arrangements",
+    "problem_url": "https://codeforces.com/contest/919/problem/C",
+    "submission_id": "CF105063495",
+    "submission_url": "https://codeforces.com/contest/919/submission/105063495",
+    "tags": [
+      "brute force",
+      "implementation",
+      "*1300"
+    ],
+    "timestamp": "Jan/22/2021 18:38"
+  },
   "CF105071421": {
     "contest_id": 915,
     "language": "GNU C++14",
