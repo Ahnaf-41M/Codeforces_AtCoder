@@ -1,4 +1,22 @@
 {
+  "CF105395007": {
+    "contest_id": 1475,
+    "language": "GNU C++14",
+    "path": "codeforces\\1475\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Ball in Berland",
+    "problem_url": "https://codeforces.com/contest/1475/problem/C",
+    "submission_id": "CF105395007",
+    "submission_url": "https://codeforces.com/contest/1475/submission/105395007",
+    "tags": [
+      "combinatorics",
+      "graphs",
+      "math",
+      "*1400"
+    ],
+    "timestamp": "Jan/25/2021 22:49"
+  },
   "CF105566866": {
     "contest_id": 1288,
     "language": "GNU C++14",
