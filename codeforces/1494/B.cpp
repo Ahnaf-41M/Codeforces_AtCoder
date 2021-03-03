@@ -15,31 +15,41 @@
 using namespace std;
 using namespace __gnu_cxx;
 
-bool Check(int n, int U, int R, int D, int L, int mask)
-{
-   if ((1 << 0) & mask)
-      U--, L--;
-   if ((1 << 1) & mask)
-      U--, R--;
-   if ((1 << 2) & mask)
-      D--, L--;
-   if ((1 << 3) & mask)
-      D--, R--;
-
-   return (0 <= min(min(L, R), min(D, U)) && max(max(L, R), max(D, U)) <= n - 2);
-}
 void Solve()
 {
    int n, U, R, D, L;
+   int U1, R1, D1, L1;
+
    cin >> n >> U >> R >> D >> L;
 
-   rep(mask, 0, (1 << 4) - 1) {
-      if (Check(n, U, R, D, L, mask)) {
-         cout << "YES\n";
-         return;
-      }
+   U1 = U, R1 = R, D1 = D, L1 = L;
+
+   if (U == n) L1--, R1--;
+   if (D == n) L1--, R1--;
+   if (R == n) U1--, D1--;
+   if (L == n) U1--, D1--;
+
+   if (U == n - 1) {
+      if (L1 > R1) L1--;
+      else R1--;
    }
-   cout << "NO\n";
+   if (D == n - 1) {
+      if (L1 > R1) L1--;
+      else R1--;
+   }
+   if (R == n - 1) {
+      if (U1 > D1) U1--;
+      else D1--;
+   }
+   if (L == n - 1) {
+      if (U1 > D1) U1--;
+      else D1--;
+   }
+
+   if (L1 >= 0 && R1 >= 0 && D1 >= 0 && U1 >= 0)
+      cout << "YES\n";
+   else
+      cout << "NO\n";
    return;
 }
 signed main()
