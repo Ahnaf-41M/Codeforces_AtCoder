@@ -1,75 +1,138 @@
 #include<bits/stdc++.h>
-#define  MX      10000005
-#define  ff      first
-#define  ss      second
-#define  pb      push_back
-#define  int     long long
-#define  PII     pair<int,int>
-#define  all(v)  v.begin(),v.end()
+#include <ext/rope>
+
+#define min3(a,b,c)   min(a,min(b,c))
+#define max3(a,b,c)   max(a,max(b,c))
+#define min4(a,b,c,d) min(min(a,b),min(c,d))
+#define max4(a,b,c,d) max(max(a,b),max(c,d))
+
+#define count_one(a) __builtin_popcount(a)  // Returns the number of set bits(1) in a number(a). In long long use __builtin_popcountll(a)
+#define parity(i)    __builtin_parity(i)  //even parity 0 and odd parity 1
+#define blz(a)       __builtin_clz(a) //Returns the number of leading zeroes in a number(a)
+#define btz(a)       __builtin_ctz(a) //Returns the number of trailing zeroes in a number(a)
+#define gcd(a,b)     __gcd(a,b)
+#define lcm(a,b)     (a*(b/gcd(a,b)))
+
+#define pb   push_back
+#define PI   M_PI
+#define endl "\n"
+#define sc   scanf
+#define pf   printf
+
+#define ll  long long
+#define ull unsigned long long
+
+#define W(t)            while(t--)
+#define rep1(i,n)       for(int i = 0; i < n; i++)
+#define rep2(a,b)       for(int i = a; i <= b; i++)
+#define rep3(a,b,c)     for(int i = a; i <= b; i+=c)
+#define irep(a,b,c)     for(int i = b; i >=a; i-=c)
+#define repit(it,type)  for(it = type.begin(); it != type.end(); it++)
+#define IOS ios::sync_with_stdio(0), cin.tie(0), cout.tie(0);
 using namespace std;
+using namespace __gnu_cxx;
+#define Max 10000005
+ll is_prime[Max+5];
 
-int mnPrime[MX + 5];
-vector<int> primes;
-vector<pair<int, int>> ans;
-int ar[500005];
-
-void Sieve()
+vector<int> v;
+void sieve()
 {
-   mnPrime[1] = 1;
-   for (int i = 2; i <= MX; i++) {
-      if (mnPrime[i] == 0) {
-         mnPrime[i] = i;
-         for (int j = i * i; j <= MX; j += i)
-            mnPrime[j] = i;
-      }
-   }
+    ll i,j;
+    is_prime[0]=-1,is_prime[1]=1,is_prime[2]=2;
+
+    for(i = 3; i < Max; i++)
+    {
+        if(is_prime[i] == 0)
+        {
+            is_prime[i] = i;
+            for(j = 2*i; j < Max; j+=i)
+            {
+                is_prime[j]=i;
+            }
+        }
+    }
+    /*v.push_back(2);
+    for(i = 3; i <= Max; i+=2)
+        if(a[i])
+            v.push_back(i);*/
 }
-vector<int> Factorize(int n)
+int main()
 {
-   int j = 0;
-   vector<int> factors;
-   while (n > 1) {
-      int pp = mnPrime[n];
-      factors.pb(pp);
-      while (n % pp == 0)
-         n /= pp;
-   }
-   return factors;
+    IOS
+    //freopen("input.txt", "r", stdin);
+    //freopen("output.txt", "w", stdout);
+    sieve();
+    ll t,n,i,j,k,l;
+
+    cin>>n;
+
+    ll a[n];
+
+    rep1(i,n)
+    {
+        cin>>a[i];
+    }
+
+    vector<ll> div1,div2;
+
+    for(i = 0; i < n; i++)
+    {
+
+        ll x = a[i];
+        while(x%2 == 0)
+        {
+            x/=2;
+        }
+        if(x != a[i])
+        {
+            if(x == 1)
+            {
+                div1.pb(-1);
+                div2.pb(-1);
+            }
+            else
+            {
+                div1.pb(x);
+                div2.pb(2);
+            }
+        }
+        else
+        {
+            ll m;
+            vector<ll> tmp;
+            while(x>1)
+            {
+                m = is_prime[x];
+                while(x % m==0)
+                {
+                    x /= m;
+                }
+                tmp.pb(m);
+            }
+            if(tmp.size()<=1)
+            {
+                div1.pb(-1);
+                div2.pb(-1);
+            }
+            else
+            {
+                sort(tmp.begin(),tmp.end());
+                div1.pb(tmp[0]);
+                div2.pb(tmp[1]);
+            }
+        }
+
+    }
+    for(i = 0; i < div1.size(); i++)
+    {
+        cout<<div1[i]<<" ";
+    }
+    cout<<endl;
+    for(i = 0; i < div2.size(); i++)
+    {
+        cout<<div2[i]<<" ";
+    }
+
+    return 0;
 }
-signed main()
-{
-   ios::sync_with_stdio(false);
-   cin.tie(NULL);
-   cout.tie(NULL);
-
-   Sieve();
-   int n;
-   
-   cin >> n;
-   for (int i = 0; i < n; i++)
-      cin >> ar[i];
-
-   for (int i = 0; i < n; i++) {
-      vector<int> divs;
-
-      divs = Factorize(ar[i]);
-
-      if (divs.size() <= 1)
-         ans.pb({ -1, -1});
-      else {
-         int d1 = divs[0];
-         int d2 = divs[1];
-         for (int i = 2; i < divs.size(); i++)
-            d2 *= divs[i];
-         ans.pb({d1, d2});
-      }
-   }
-
-   for (auto it : ans)
-      cout << it.ff << " ";
-   cout << endl;
-   for (auto it : ans)
-      cout << it.ss << " ";
-
-   return 0;
-}
+ 
