@@ -597,6 +597,25 @@
     ],
     "timestamp": "Mar/20/2021 10:16"
   },
+  "CF112746864": {
+    "contest_id": 1512,
+    "language": "GNU C++14",
+    "path": "codeforces\\1512\\G.cpp",
+    "platform": "Codeforces",
+    "problem_index": "G",
+    "problem_name": "Short Task",
+    "problem_url": "https://codeforces.com/contest/1512/problem/G",
+    "submission_id": "CF112746864",
+    "submission_url": "https://codeforces.com/contest/1512/submission/112746864",
+    "tags": [
+      "brute force",
+      "dp",
+      "math",
+      "number theory",
+      "*1700"
+    ],
+    "timestamp": "Apr/12/2021 11:07"
+  },
   "CF112747020": {
     "contest_id": 1512,
     "language": "GNU C++14",
