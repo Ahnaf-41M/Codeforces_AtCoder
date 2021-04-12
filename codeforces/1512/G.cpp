@@ -17,31 +17,14 @@ using namespace __gnu_cxx;
 
 int ans[MX + 5], SOD[MX + 5];
 
-void Sieve()
+void Pre()
 {
-   // memset(SOD, 1, sizeof(SOD));
-   fill(SOD, SOD + MX + 5, 1);
-   for (int i = 2; i <= MX; i++) {
-      if (SOD[i] == 1) {
-         for (int j = i; j <= MX; j += i) {
-            int cur = j;
-            int cur_term = 1, cur_sum = 1;
-            while (cur % i == 0) {
-               cur /= i;
-               cur_term *= i; //1,p^1,p^2...
-               cur_sum += cur_term; //1+p^2+p^2+...
-            }
-            SOD[j] *= cur_sum;
-         }
+   for (int i = 1; i <= MX; i++) {
+      for (int j = i; j <= MX; j += i) {
+         SOD[j] += i;
       }
-   }
-
-   ans[1] = 1;
-   for (int i = 2; i <= MX; i++) {
-      if (SOD[i] < MX) {
-         if (!ans[SOD[i]])
-            ans[SOD[i]] = i;
-      }
+      if (SOD[i] <= MX-5 && !ans[SOD[i]])
+         ans[SOD[i]] = i;
    }
 }
 void Solve()
@@ -58,9 +41,7 @@ signed main()
    ios_base::sync_with_stdio(0);
    cin.tie(0);
    cout.tie(0);
-
-   Sieve();
-
+   Pre();
    int T;
    cin >> T;
 
