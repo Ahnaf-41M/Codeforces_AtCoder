@@ -46,7 +46,7 @@ void Solve()
    rep(x, 1, n) {
       ans += nCr(cnt[x], 3); //(x,x,x) => nC3
       if (x + 2 <= n) {
-         ans += cnt[x] * cnt[x + 1] * cnt[x + 2]; // (x,x+1,x+2)
+         ans += cnt[x] * nCr(cnt[x + 1], 1) * nCr(cnt[x + 2], 1); // (x,x+1,x+2)
          ans += cnt[x] * nCr(cnt[x + 2], 2); // (x,x+2,x+2) => nC2
          ans += cnt[x + 2] * nCr(cnt[x], 2); // (x,x,x+2) => nC2
       }
