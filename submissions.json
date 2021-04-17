@@ -597,6 +597,22 @@
     ],
     "timestamp": "Mar/20/2021 10:16"
   },
+  "CF113292332": {
+    "contest_id": 14,
+    "language": "GNU C++14",
+    "path": "codeforces\\14\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Young Photographer",
+    "problem_url": "https://codeforces.com/contest/14/problem/B",
+    "submission_id": "CF113292332",
+    "submission_url": "https://codeforces.com/contest/14/submission/113292332",
+    "tags": [
+      "implementation",
+      "*1000"
+    ],
+    "timestamp": "Apr/17/2021 10:48"
+  },
   "CF113298141": {
     "contest_id": 102,
     "language": "GNU C++14",
