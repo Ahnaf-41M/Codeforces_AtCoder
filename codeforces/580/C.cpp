@@ -45,8 +45,10 @@ void Solve()
    }
    dfs(1, cat[1]);
 
-   rep(i, 1, n) ans += OK[i];
-   
+   rep(i, 1, n) {
+      // if (OK[i]) cout << i << " ";
+      ans += OK[i];
+   }
    cout << ans;
    return;
 }
