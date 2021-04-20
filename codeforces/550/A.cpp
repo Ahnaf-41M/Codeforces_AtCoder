@@ -15,19 +15,46 @@
 using namespace std;
 using namespace __gnu_cxx;
 
+bool done[MX];
 void Solve()
 {
    string s;
-   int a1, b1, a2, b2;
+   int AB = 0, BA = 0, ABA = 0, BAB = 0;
 
    cin >> s;
-   a1 = s.find("AB");
-   b1 = s.find("BA", a1 + 2);
-   a2 = s.find("BA");
-   b2 = s.find("AB", a2 + 2);
-
-   if ((a1 != string::npos && b1 != string::npos) ||
-         (a2 != string::npos && b2 != string::npos))
+   int n = s.size();
+   rep(i, 0, n - 2) {
+      if (s[i] == 'A' && s[i + 1] == 'B') {
+         if (done[i]) {
+            if (ABA) {
+               cout << "YES\n";
+               return;
+            }
+            ABA++; i++;
+         }
+         else {
+            if (ABA) { cout << "YES\n"; return ;}
+            AB++;
+         }
+         done[i] = done[i + 1] = 1;
+      }
+      else if (s[i] == 'B' && s[i + 1] == 'A') { // (-_-)
+         if (done[i]) {
+            if (ABA) {
+               cout << "YES\n";
+               return;
+            }
+            ABA++; i++;
+         }
+         else {
+            if (ABA) { cout << "YES\n"; return ;}
+            BA++;
+         }
+         done[i] = done[i + 1] = 1;
+      }
+   }
+   // cout << ABA << " " << AB;
+   if (AB && BA)
       cout << "YES\n";
    else
       cout << "NO\n";
