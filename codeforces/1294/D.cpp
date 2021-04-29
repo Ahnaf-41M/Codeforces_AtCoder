@@ -10,18 +10,38 @@
 #define  irep(i,b,a)   for(int i = b; i >= a; i--)
 using namespace std;
 
-int freq[MX];
+int has[1000005];
+stack<int> till;
 void Solve()
 {
    int q, x, mex = 0;
-   cin >> q >> x;
+   set<int> cur;
 
+   cin >> q >> x;
    while (q--) {
       int k; cin >> k;
-      freq[k % x]++;
-      while (freq[mex % x] > mex / x) 
+      int least = (k % x) + x * (mex / x);
+
+      // cout << least << " ";
+      if (least == mex) {
+         while (!till.empty()) {
+            int m = till.top(), mul = m;
+            till.pop();
+            rep(i, 2, has[m]) {
+               while (has[mul] && mul <= MX)
+                  mul += x;
+               has[mul]++;
+            }
+            has[m] = 1;
+         }
+         while (has[mex + 1])
+            mex++;
          mex++;
-      cout << mex << "\n";
+      }
+      has[least]++;
+      if (has[least] == 2)
+         till.push(least);
+      cout << mex << endl;
    }
    return;
 }
