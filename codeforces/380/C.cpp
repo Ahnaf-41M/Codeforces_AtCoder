@@ -13,7 +13,7 @@ int l_rem, r_rem;
 struct info
 {
    int L, R, tot;
-} tree[3 * MX];
+} tree[4 * MX];
 
 void build(int node, int b, int e)
 {
