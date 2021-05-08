@@ -16,27 +16,18 @@ struct info
 };
 void Solve(int tc)
 {
-   int n, mx = 1e9 + 7, mn = INT_MAX, ind;
+   int n, mx = 1e9 + 7;;
    vector<info> ans;
 
    cin >> n;
    int ar[n + 1];
 
-   rep(i, 1, n) {
-      cin >> ar[i];
-      if (ar[i] < mn) {
-         mn = ar[i];
-         ind = i;
-      }
-   }
-   int cur = mn;
-   rep(i, ind + 1, n) ans.pb({ind, i, mn, ++cur});
-   cur = mn;
-   irep(i, ind - 1, 1) ans.pb({ind, i, mn, ++cur});
-   cout << ans.size() << "\n";
-   for (auto it : ans)
-      cout << it.i << " " << it.j << " " << it.x << " " << it.y << "\n";
+   rep(i, 1, n) cin >> ar[i];
 
+   cout << n / 2 << endl;
+   for (int i = 1; i < n; i += 2)
+      cout << i << " " << i + 1 << " "
+           << min(ar[i], ar[i + 1]) << " " << mx << "\n";
    return;
 }
 signed main()
