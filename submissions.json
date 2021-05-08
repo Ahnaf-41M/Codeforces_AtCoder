@@ -1,4 +1,21 @@
 {
+  "CF115672549": {
+    "contest_id": 1405,
+    "language": "GNU C++17",
+    "path": "codeforces\\1405\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Array Cancellation",
+    "problem_url": "https://codeforces.com/contest/1405/problem/B",
+    "submission_id": "CF115672549",
+    "submission_url": "https://codeforces.com/contest/1405/submission/115672549",
+    "tags": [
+      "constructive algorithms",
+      "implementation",
+      "*1000"
+    ],
+    "timestamp": "May/08/2021 13:17"
+  },
   "CF115680822": {
     "contest_id": 1476,
     "language": "GNU C++17",
