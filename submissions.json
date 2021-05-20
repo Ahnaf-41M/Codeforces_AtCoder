@@ -1,4 +1,22 @@
 {
+  "CF116744129": {
+    "contest_id": 702,
+    "language": "GNU C++17",
+    "path": "codeforces\\702\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Maximum Increase",
+    "problem_url": "https://codeforces.com/contest/702/problem/A",
+    "submission_id": "CF116744129",
+    "submission_url": "https://codeforces.com/contest/702/submission/116744129",
+    "tags": [
+      "dp",
+      "greedy",
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "May/20/2021 19:00"
+  },
   "CF116882490": {
     "contest_id": 1527,
     "language": "GNU C++17",
