@@ -1,4 +1,23 @@
 {
+  "CF119062551": {
+    "contest_id": 1538,
+    "language": "GNU C++17",
+    "path": "codeforces\\1538\\F.cpp",
+    "platform": "Codeforces",
+    "problem_index": "F",
+    "problem_name": "Interesting Function",
+    "problem_url": "https://codeforces.com/contest/1538/problem/F",
+    "submission_id": "CF119062551",
+    "submission_url": "https://codeforces.com/contest/1538/submission/119062551",
+    "tags": [
+      "binary search",
+      "dp",
+      "math",
+      "number theory",
+      "*1500"
+    ],
+    "timestamp": "Jun/10/2021 22:35"
+  },
   "CF119145784": {
     "contest_id": 1538,
     "language": "GNU C++17",
