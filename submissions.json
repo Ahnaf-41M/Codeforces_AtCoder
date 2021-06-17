@@ -1,4 +1,21 @@
 {
+  "CF119677520": {
+    "contest_id": 1453,
+    "language": "GNU C++17",
+    "path": "codeforces\\1453\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Suffix Operations",
+    "problem_url": "https://codeforces.com/contest/1453/problem/B",
+    "submission_id": "CF119677520",
+    "submission_url": "https://codeforces.com/contest/1453/submission/119677520",
+    "tags": [
+      "constructive algorithms",
+      "implementation",
+      "*1400"
+    ],
+    "timestamp": "Jun/17/2021 10:08"
+  },
   "CF119699280": {
     "contest_id": 1283,
     "language": "GNU C++17",
