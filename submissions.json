@@ -6976,6 +6976,22 @@
     ],
     "timestamp": "Jul/03/2021 11:31"
   },
+  "CF121289725": {
+    "contest_id": 1542,
+    "language": "GNU C++17",
+    "path": "codeforces\\1542\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Strange Function",
+    "problem_url": "https://codeforces.com/contest/1542/problem/C",
+    "submission_id": "CF121289725",
+    "submission_url": "https://codeforces.com/contest/1542/submission/121289725",
+    "tags": [
+      "math",
+      "number theory"
+    ],
+    "timestamp": "Jul/04/2021 13:24"
+  },
   "CF52731312": {
     "contest_id": 4,
     "language": "GNU C11",
