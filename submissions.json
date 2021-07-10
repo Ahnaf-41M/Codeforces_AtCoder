@@ -7206,6 +7206,22 @@
     ],
     "timestamp": "Jul/07/2021 22:13"
   },
+  "CF121974359": {
+    "contest_id": 1547,
+    "language": "GNU C++17",
+    "path": "codeforces\\1547\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Pair Programming",
+    "problem_url": "https://codeforces.com/contest/1547/problem/C",
+    "submission_id": "CF121974359",
+    "submission_url": "https://codeforces.com/contest/1547/submission/121974359",
+    "tags": [
+      "dp",
+      "greedy"
+    ],
+    "timestamp": "Jul/10/2021 21:57"
+  },
   "CF122033342": {
     "contest_id": 1547,
     "language": "GNU C++17",
