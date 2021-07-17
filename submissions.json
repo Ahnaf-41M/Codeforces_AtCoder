@@ -1839,6 +1839,22 @@
     ],
     "timestamp": "Jul/10/2021 19:10"
   },
+  "AC24301373": {
+    "contest_id": "abc210",
+    "language": "C++ (GCC 9.2.1)",
+    "path": "atcoder\\abc210\\C.cpp",
+    "platform": "AtCoder",
+    "problem_index": "C",
+    "problem_name": "Colorful Candies",
+    "problem_url": "https://atcoder.jp/contests/abc210/tasks/abc210_c",
+    "submission_id": "AC24301373",
+    "submission_url": "https://atcoder.jp/contests/abc210/submissions/24301373",
+    "tags": [
+      "AtCoder",
+      "*300"
+    ],
+    "timestamp": "Jul/17/2021 18:23"
+  },
   "CF100088050": {
     "contest_id": 1027,
     "language": "GNU C++14",
