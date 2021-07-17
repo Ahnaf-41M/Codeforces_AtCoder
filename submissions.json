@@ -1839,6 +1839,22 @@
     ],
     "timestamp": "Jul/10/2021 19:10"
   },
+  "AC24288313": {
+    "contest_id": "abc210",
+    "language": "C++ (GCC 9.2.1)",
+    "path": "atcoder\\abc210\\A.cpp",
+    "platform": "AtCoder",
+    "problem_index": "A",
+    "problem_name": "Cabbages",
+    "problem_url": "https://atcoder.jp/contests/abc210/tasks/abc210_a",
+    "submission_id": "AC24288313",
+    "submission_url": "https://atcoder.jp/contests/abc210/submissions/24288313",
+    "tags": [
+      "AtCoder",
+      "*100"
+    ],
+    "timestamp": "Jul/17/2021 18:07"
+  },
   "AC24297150": {
     "contest_id": "abc210",
     "language": "C++ (GCC 9.2.1)",
