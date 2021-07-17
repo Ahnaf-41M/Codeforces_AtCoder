@@ -1839,6 +1839,22 @@
     ],
     "timestamp": "Jul/10/2021 19:10"
   },
+  "AC24297150": {
+    "contest_id": "abc210",
+    "language": "C++ (GCC 9.2.1)",
+    "path": "atcoder\\abc210\\B.cpp",
+    "platform": "AtCoder",
+    "problem_index": "B",
+    "problem_name": "Bouzu Mekuri",
+    "problem_url": "https://atcoder.jp/contests/abc210/tasks/abc210_b",
+    "submission_id": "AC24297150",
+    "submission_url": "https://atcoder.jp/contests/abc210/submissions/24297150",
+    "tags": [
+      "AtCoder",
+      "*200"
+    ],
+    "timestamp": "Jul/17/2021 18:16"
+  },
   "AC24301373": {
     "contest_id": "abc210",
     "language": "C++ (GCC 9.2.1)",
