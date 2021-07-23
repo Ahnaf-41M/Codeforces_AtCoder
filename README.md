@@ -13,6 +13,7 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
+737 | [B2 - Wonderful Coloring - 2](https://codeforces.com/contest/1551/problem/B2) | [GNU C++17](./codeforces/1551/B2.cpp) | `binary search` `constructive algorithms` `data structures` `greedy` `*1400` | Jul/23/2021 21:41 | 
 736 | [D - Backspace](https://codeforces.com/contest/1553/problem/D) | [GNU C++17](./codeforces/1553/D.cpp) | `greedy` `strings` `two pointers` | Jul/23/2021 09:34 | 
 735 | [B - Reverse String](https://codeforces.com/contest/1553/problem/B) | [GNU C++17](./codeforces/1553/B.cpp) | `brute force` | Jul/23/2021 09:12 | 
 734 | [C - Penalty](https://codeforces.com/contest/1553/problem/C) | [GNU C++17](./codeforces/1553/C.cpp) | `brute force` `dp` `greedy` | Jul/22/2021 21:38 | 
