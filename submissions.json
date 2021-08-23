@@ -2079,6 +2079,22 @@
     ],
     "timestamp": "Aug/08/2021 19:17"
   },
+  "AC25300398": {
+    "contest_id": "abc215",
+    "language": "C++ (GCC 9.2.1)",
+    "path": "atcoder\\abc215\\D.cpp",
+    "platform": "AtCoder",
+    "problem_index": "D",
+    "problem_name": "Coprime 2",
+    "problem_url": "https://atcoder.jp/contests/abc215/tasks/abc215_d",
+    "submission_id": "AC25300398",
+    "submission_url": "https://atcoder.jp/contests/abc215/submissions/25300398",
+    "tags": [
+      "AtCoder",
+      "*400"
+    ],
+    "timestamp": "Aug/23/2021 20:10"
+  },
   "AC26624019": {
     "contest_id": "abc223",
     "language": "C++ (GCC 9.2.1)",
