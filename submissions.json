@@ -2079,6 +2079,22 @@
     ],
     "timestamp": "Aug/08/2021 19:17"
   },
+  "AC27075076": {
+    "contest_id": "abc226",
+    "language": "C++ (GCC 9.2.1)",
+    "path": "atcoder\\abc226\\A.cpp",
+    "platform": "AtCoder",
+    "problem_index": "A",
+    "problem_name": "Round decimals",
+    "problem_url": "https://atcoder.jp/contests/abc226/tasks/abc226_a",
+    "submission_id": "AC27075076",
+    "submission_url": "https://atcoder.jp/contests/abc226/submissions/27075076",
+    "tags": [
+      "AtCoder",
+      "*100"
+    ],
+    "timestamp": "Nov/07/2021 18:00"
+  },
   "AC27082506": {
     "contest_id": "abc226",
     "language": "C++ (GCC 9.2.1)",
