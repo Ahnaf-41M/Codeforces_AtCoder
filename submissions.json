@@ -7897,6 +7897,24 @@
     ],
     "timestamp": "Aug/01/2021 21:58"
   },
+  "CF155371158": {
+    "contest_id": 1638,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces\\1638\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Reverse",
+    "problem_url": "https://codeforces.com/contest/1638/problem/A",
+    "submission_id": "CF155371158",
+    "submission_url": "https://codeforces.com/contest/1638/submission/155371158",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "math",
+      "*800"
+    ],
+    "timestamp": "Apr/30/2022 15:10"
+  },
   "CF155375027": {
     "contest_id": 1638,
     "language": "GNU C++17 (64)",
