@@ -7897,6 +7897,24 @@
     ],
     "timestamp": "Aug/01/2021 21:58"
   },
+  "CF155375027": {
+    "contest_id": 1638,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces\\1638\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Odd Swap Sort",
+    "problem_url": "https://codeforces.com/contest/1638/problem/B",
+    "submission_id": "CF155375027",
+    "submission_url": "https://codeforces.com/contest/1638/submission/155375027",
+    "tags": [
+      "data structures",
+      "math",
+      "sortings",
+      "*1100"
+    ],
+    "timestamp": "Apr/30/2022 15:57"
+  },
   "CF155386644": {
     "contest_id": 1638,
     "language": "GNU C++17 (64)",
