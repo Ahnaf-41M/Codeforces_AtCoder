@@ -7897,6 +7897,22 @@
     ],
     "timestamp": "Aug/01/2021 21:58"
   },
+  "CF156618688": {
+    "contest_id": 1676,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces\\1676\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Lucky?",
+    "problem_url": "https://codeforces.com/contest/1676/problem/A",
+    "submission_id": "CF156618688",
+    "submission_url": "https://codeforces.com/contest/1676/submission/156618688",
+    "tags": [
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "May/10/2022 20:46"
+  },
   "CF156628040": {
     "contest_id": 1676,
     "language": "GNU C++17 (64)",
