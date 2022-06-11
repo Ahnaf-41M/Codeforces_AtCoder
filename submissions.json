@@ -7897,6 +7897,25 @@
     ],
     "timestamp": "Aug/01/2021 21:58"
   },
+  "CF160194362": {
+    "contest_id": 1690,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces\\1690\\E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Price Maximization",
+    "problem_url": "https://codeforces.com/contest/1690/problem/E",
+    "submission_id": "CF160194362",
+    "submission_url": "https://codeforces.com/contest/1690/submission/160194362",
+    "tags": [
+      "binary search",
+      "greedy",
+      "math",
+      "two pointers",
+      "*1500"
+    ],
+    "timestamp": "Jun/11/2022 18:02"
+  },
   "CF160240854": {
     "contest_id": 1688,
     "language": "GNU C++17 (64)",
