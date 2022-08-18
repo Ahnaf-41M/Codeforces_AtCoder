@@ -17,20 +17,31 @@ void Solve(int tc)
     char f;
     string s1, s2;
     cin >> n >> m;
-
-    deque<char> q1, q2;
     cin >> s1 >> s2;
-    f = s2[0];
-    for (char ch : s1) q1.pb(ch);
-    for (char ch : s2) q2.pb(ch);
 
-    while (q1.size() > 1 && q1 != q2) {
-        char x = q1.front(); q1.pop_front();
-        char y = q1.front(); q1.pop_front();
-        if (f == '1') q1.push_front(max(x, y));
-        else q1.push_front(min(x, y));
+    int i = n - 1, j = m - 1;
+
+    while (i >= 0 && j >= 0 && s1[i] == s2[j])
+        i--, j--;
+
+    if (j == -1) {
+        cout << "YES\n";
+        return;
     }
-    cout << (q1 == q2 ? "YES\n" : "NO\n");
+    if (j > 0) {
+        cout << "NO\n";
+        return;
+    }
+    while (i >= 0) {
+        if (s1[i] == s2[0]) {
+            cout << "YES\n";
+            return;
+        }
+        i--;
+    }
+    cout << "NO\n";
+
+
 }
 signed main()
 {
