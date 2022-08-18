@@ -7897,6 +7897,23 @@
     ],
     "timestamp": "Aug/01/2021 21:58"
   },
+  "CF168761032": {
+    "contest_id": 1704,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces\\1704\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Two 0-1 Sequences",
+    "problem_url": "https://codeforces.com/contest/1704/problem/A",
+    "submission_id": "CF168761032",
+    "submission_url": "https://codeforces.com/contest/1704/submission/168761032",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "*800"
+    ],
+    "timestamp": "Aug/18/2022 11:22"
+  },
   "CF168800392": {
     "contest_id": 1704,
     "language": "GNU C++17 (64)",
