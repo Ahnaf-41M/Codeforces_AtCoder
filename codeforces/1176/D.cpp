@@ -11,22 +11,22 @@
 #define  irep(i,b,a)  for(int i = b; i >= a; i--)
 using namespace std;
 
+vector<int> primes;
 bool OK[MX];
-int divs[MX], prime_pos[MX];
+int divs[MX];
 void Sieve()
 {
-    int k = 1;
+    primes.pb(0);
     OK[2] = 1;
     for (int i = 3; i < MX; i += 2)
         OK[i] = 1;
     for (int i = 2; i < MX; i++) {
-        if (OK[i]) prime_pos[i] = k++;
+        if (OK[i]) primes.pb(i);
         for (int j = i + i; j < MX; j += i) {
             OK[j] = 0;
-            divs[j] = i;
+            divs[j] = max(i, divs[j]);
         }
     }
-
 }
 void Solve(int tc)
 {
@@ -42,8 +42,9 @@ void Solve(int tc)
     while (!s.empty()) {
         auto it = s.end(); it--;
         if (OK[(*it)]) {
-            ans.pb(prime_pos[(*it)]);
-            s.erase(s.find(prime_pos[(*it)]));
+            int pos = lower_bound(all(primes), (*it)) - primes.begin();
+            ans.pb(pos);
+            s.erase(s.find(pos));
         }
         else {
             ans.pb((*it));
