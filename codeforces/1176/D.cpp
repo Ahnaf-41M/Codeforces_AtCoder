@@ -59,6 +59,7 @@ signed main()
     cin.tie(0);
 
     Sieve();
+    // cout << primes.size() << "\n" << primes.back() << "\n";
     int T = 1;
     //cin >> T;
 
