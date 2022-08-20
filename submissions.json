@@ -7897,6 +7897,25 @@
     ],
     "timestamp": "Aug/01/2021 21:58"
   },
+  "CF169068012": {
+    "contest_id": 546,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces\\546\\D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Soldier and Number Game",
+    "problem_url": "https://codeforces.com/contest/546/problem/D",
+    "submission_id": "CF169068012",
+    "submission_url": "https://codeforces.com/contest/546/submission/169068012",
+    "tags": [
+      "constructive algorithms",
+      "dp",
+      "math",
+      "number theory",
+      "*1700"
+    ],
+    "timestamp": "Aug/20/2022 16:36"
+  },
   "CF169080235": {
     "contest_id": 1176,
     "language": "GNU C++17 (64)",
