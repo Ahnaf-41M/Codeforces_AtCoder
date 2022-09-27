@@ -7897,6 +7897,25 @@
     ],
     "timestamp": "Aug/01/2021 21:58"
   },
+  "CF173659799": {
+    "contest_id": 1526,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces\\1526\\C1.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C1",
+    "problem_name": "Potions (Easy Version)",
+    "problem_url": "https://codeforces.com/contest/1526/problem/C1",
+    "submission_id": "CF173659799",
+    "submission_url": "https://codeforces.com/contest/1526/submission/173659799",
+    "tags": [
+      "brute force",
+      "data structures",
+      "dp",
+      "greedy",
+      "*1500"
+    ],
+    "timestamp": "Sep/27/2022 11:48"
+  },
   "CF174375724": {
     "contest_id": 1385,
     "language": "GNU C++17 (64)",
