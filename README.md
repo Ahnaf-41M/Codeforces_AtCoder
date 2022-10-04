@@ -13,8 +13,9 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-884 | [E - Cyclic Components](https://codeforces.com/contest/977/problem/E) | [GNU C++17 (64)](./codeforces/977/E.cpp) | `dfs and similar` `dsu` `graphs` `*1500` | Oct/06/2022 15:48 | 
-883 | [C - Vasya and String](https://codeforces.com/contest/676/problem/C) | [GNU C++17 (64)](./codeforces/676/C.cpp) | `binary search` `dp` `strings` `two pointers` `*1500` | Oct/06/2022 15:22 | 
+885 | [E - Cyclic Components](https://codeforces.com/contest/977/problem/E) | [GNU C++17 (64)](./codeforces/977/E.cpp) | `dfs and similar` `dsu` `graphs` `*1500` | Oct/06/2022 15:48 | 
+884 | [C - Vasya and String](https://codeforces.com/contest/676/problem/C) | [GNU C++17 (64)](./codeforces/676/C.cpp) | `binary search` `dp` `strings` `two pointers` `*1500` | Oct/06/2022 15:22 | 
+883 | [B - AGAGA XOOORRR](https://codeforces.com/contest/1516/problem/B) | [GNU C++17 (64)](./codeforces/1516/B.cpp) | `bitmasks` `brute force` `dp` `greedy` `*1500` | Oct/04/2022 20:00 | 
 882 | [E - Special Elements](https://codeforces.com/contest/1352/problem/E) | [GNU C++17 (64)](./codeforces/1352/E.cpp) | `brute force` `implementation` `two pointers` `*1500` | Oct/03/2022 20:23 | 
 881 | [C - Given Length and Sum of Digits...](https://codeforces.com/contest/489/problem/C) | [GNU C++17 (64)](./codeforces/489/C.cpp) | `dp` `greedy` `implementation` `*1400` | Oct/03/2022 15:47 | 
 880 | [C - Phase Shift](https://codeforces.com/contest/1735/problem/C) | [GNU C++17 (64)](./codeforces/1735/C.cpp) | `dfs and similar` `dsu` `graphs` `greedy` `implementation` `strings` | Oct/03/2022 10:18 | 
