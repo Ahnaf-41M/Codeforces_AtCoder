@@ -10305,6 +10305,22 @@
     ],
     "timestamp": "Oct/06/2022 15:48"
   },
+  "CF175496870": {
+    "contest_id": 1736,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces\\1736\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Playing with GCD",
+    "problem_url": "https://codeforces.com/contest/1736/problem/B",
+    "submission_id": "CF175496870",
+    "submission_url": "https://codeforces.com/contest/1736/submission/175496870",
+    "tags": [
+      "math",
+      "number theory"
+    ],
+    "timestamp": "Oct/11/2022 10:19"
+  },
   "CF175496913": {
     "contest_id": 1736,
     "language": "GNU C++17 (64)",
