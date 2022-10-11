@@ -10305,6 +10305,23 @@
     ],
     "timestamp": "Oct/06/2022 15:48"
   },
+  "CF175496787": {
+    "contest_id": 1736,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces\\1736\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Make A Equal to B",
+    "problem_url": "https://codeforces.com/contest/1736/problem/A",
+    "submission_id": "CF175496787",
+    "submission_url": "https://codeforces.com/contest/1736/submission/175496787",
+    "tags": [
+      "brute force",
+      "greedy",
+      "sortings"
+    ],
+    "timestamp": "Oct/11/2022 10:17"
+  },
   "CF175496870": {
     "contest_id": 1736,
     "language": "GNU C++17 (64)",
