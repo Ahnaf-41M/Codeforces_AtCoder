@@ -14,16 +14,14 @@ vector<int> adj[1005];
 void Solve(int tc)
 {
     int n;
-    set<int> v;
     cin >> n;
     for (int i = 1; i <= n; i++) {
         int x; cin >> x;
         adj[x].pb(i);
-        v.insert(x);
     }
     int ans = 0;
-    for (int i : v) {
-        for (int j : v) {
+    for (int i = 1; i <= 1000; i++) {
+        for (int j = 1; j <= 1000; j++) {
             if (adj[i].size() && adj[j].size() && __gcd(i, j) == 1) {
                 ans = max(ans, adj[i].back() + adj[j].back());
             }
@@ -31,7 +29,7 @@ void Solve(int tc)
     }
     if (!ans) cout << "-1\n";
     else cout << ans << "\n";
-    for (int i : v) adj[i].clear();
+    for (int i = 1; i <= 1000; i++) adj[i].clear();
 }
 signed main()
 {
