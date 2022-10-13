@@ -10305,6 +10305,22 @@
     ],
     "timestamp": "Oct/06/2022 15:48"
   },
+  "CF175892985": {
+    "contest_id": 1742,
+    "language": "GNU C++17",
+    "path": "codeforces\\1742\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Sum",
+    "problem_url": "https://codeforces.com/contest/1742/problem/A",
+    "submission_id": "CF175892985",
+    "submission_url": "https://codeforces.com/contest/1742/submission/175892985",
+    "tags": [
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Oct/13/2022 20:36"
+  },
   "CF175901410": {
     "contest_id": 1742,
     "language": "GNU C++17",
